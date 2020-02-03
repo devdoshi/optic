@@ -14,6 +14,7 @@ export interface IOpticTask {
 
 export interface IApiCliConfig {
   name: string
+  optic_token?: string
   tasks: {
     [key: string]: IOpticTask
   }

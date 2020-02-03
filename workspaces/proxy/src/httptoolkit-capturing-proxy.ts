@@ -50,7 +50,7 @@ export class HttpToolkitCapturingProxy {
   private config!: IHttpToolkitCapturingProxyConfig;
   public readonly events: EventEmitter = new EventEmitter();
 
-  async start(config: IHttpToolkitCapturingProxyConfig) {
+  async start(config: IHttpToolkitCapturingProxyConfig, includeOpticStatus = true) {
     this.config = config;
     const tempBasePath = path.join(os.tmpdir(), 'optic-');
     const configPath = await fs.mkdtemp(tempBasePath);
@@ -103,8 +103,8 @@ export class HttpToolkitCapturingProxy {
         }
       );
     }
-    await proxy.addRules(
-      {
+
+    const statusRule = includeOpticStatus ? [{
         matchers: [
           new mockttp.matchers.SimplePathMatcher(opticStatusPath)
         ],
@@ -114,7 +114,10 @@ export class HttpToolkitCapturingProxy {
           };
           return response;
         })
-      },
+      }] : []
+
+    await proxy.addRules(
+      ...statusRule,
       {
         matchers: [
           new mockttp.matchers.HostMatcher('amiusing.httptoolkit.tech')

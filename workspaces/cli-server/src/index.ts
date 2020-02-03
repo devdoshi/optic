@@ -25,7 +25,6 @@ export interface ICaptureLoader {
 
 export interface ICaptureSaver {
   init(captureId: string): Promise<void>
-
   save(sample: IApiInteraction): Promise<void>
 }
 
