@@ -37,5 +37,7 @@ jobs:
       run: cd "$GITHUB_WORKSPACE/core" && sbt projects
     - name: "build domain.js artifact"
       run: cd "$GITHUB_WORKSPACE/core" && sbt fullOptJS
+      env:
+        SBT_OPTS: "-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=2G -Xss2M -Duser.timezone=GMT"
     - name: "check artifact"
       run: ls -la "$GITHUB_WORKSPACE/core/optic/js/target/scala-2.12/optic-core-opt.js"
