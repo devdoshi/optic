@@ -33,11 +33,9 @@ jobs:
       run: echo $GITHUB_WORKSPACE
     - name: ls
       run: ls -la $GITHUB_WORKSPACE
-    - name: "enter scala workspace"
-      run: cd "$GITHUB_WORKSPACE/core"
     - name: "list sbt projects"
-      run: sbt projects
+      run: cd "$GITHUB_WORKSPACE/core" && sbt projects
     - name: "build domain.js artifact"
-      run: sbt fullOptJS
+      run: cd "$GITHUB_WORKSPACE/core" && sbt fullOptJS
     - name: "check artifact"
       run: ls -la "$GITHUB_WORKSPACE/core/optic/js/target/scala-2.12/optic-core-opt.js"
