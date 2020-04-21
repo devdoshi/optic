@@ -33,6 +33,8 @@ jobs:
       run: echo $GITHUB_WORKSPACE
     - name: ls
       run: ls -la $GITHUB_WORKSPACE
+    - name: "enter scala workspace"
+      run: cd "$GITHUB_WORKSPACE/core"
     - name: "list sbt projects"
       run: sbt projects
     - name: "build domain.js artifact"
