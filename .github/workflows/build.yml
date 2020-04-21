@@ -1,0 +1,39 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ 'feature/testing-dashboard' ]
+  pull_request:
+    branches: [ 'feature/testing-dashboard' ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - name: checkout source
+      uses: actions/checkout@v2
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+        
+    - name: pwd
+      run: pwd
+    - name: "where is the code"
+      run: echo $GITHUB_WORKSPACE
+    - name: ls
+      run: ls -la $GITHUB_WORKSPACE
+    - name: "build domain.js artifact"
+      run: sbt fullOptJS
+    - name: "check artifact"
+      run: ls -la "$GITHUB_WORKSPACE/core/optic/js/target/scala-2.12/optic-core-opt.js"
