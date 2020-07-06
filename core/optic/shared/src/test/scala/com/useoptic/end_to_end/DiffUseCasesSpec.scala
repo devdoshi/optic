@@ -16,7 +16,7 @@ class DiffUseCasesSpec extends EndEndDiffTask {
     responseBody = json"""{ "firstName": "Aidan", "lastName": "C", "age": 26, "cities": ["San Fransisco", "New York", "Durham"]}""")
 
   val baselineEvents = {
-    implicit val ids = OpticIds.newDeterministicIdGenerator
+    implicit val ids = OpticIds.newDeterministicIdGenerator()
     new TestDataHelper("root-shape-is-object-with-keys").learnBaselineEvents(
       path = Vector("users", ":userId", "profile"),
       interactions = Vector(personInteraction))
@@ -87,7 +87,7 @@ class DiffUseCasesSpec extends EndEndDiffTask {
     responseBody = json"""{ "location": { "principality": { "city": "San Fransisco", "population": 830000, "coordinates": {"lat": "37.7749° N", "long": "122.4194° W"} } } }""")
 
   val baselineCityEvents = {
-    implicit val ids = OpticIds.newDeterministicIdGenerator
+    implicit val ids = OpticIds.newDeterministicIdGenerator()
     new TestDataHelper("root-shape-is-object").learnBaselineEvents(
       path = Vector("locations", ":city"),
       interactions = Vector(firstCityInteraction, secondCityInteraction))
@@ -154,7 +154,7 @@ class DiffUseCasesSpec extends EndEndDiffTask {
     responseBody = json"""{"name":{"first":"Bob","last":"C"},"rivals":["user1","user2","user3"],"stats":{"rank":1}}""")
 
   val baselinePWSEvents = {
-    implicit val ids = OpticIds.newDeterministicIdGenerator
+    implicit val ids = OpticIds.newDeterministicIdGenerator()
     new TestDataHelper("root-shape-is-object-with-keys").learnBaselineEvents(
       path = Vector("users", ":userId", "profile"),
       interactions = Vector(personWithStats))
@@ -212,7 +212,7 @@ class DiffUseCasesSpec extends EndEndDiffTask {
     responseBody = json"""[]""")
 
   val baselineArrayEvents = {
-    implicit val ids = OpticIds.newDeterministicIdGenerator
+    implicit val ids = OpticIds.newDeterministicIdGenerator()
     new TestDataHelper("root-shape-is-array").learnBaselineEvents(
       path = Vector("events"),
       interactions = Vector(emptyArray))
@@ -245,7 +245,7 @@ class DiffUseCasesSpec extends EndEndDiffTask {
     responseBody = json"""[{"name": "joe", "age": "thirty", "colors": ["red", "green", "yellow"]}, {"name": "joe", "age": 45}]""")
 
   val baselineObjectArrayEvents = {
-    implicit val ids = OpticIds.newDeterministicIdGenerator
+    implicit val ids = OpticIds.newDeterministicIdGenerator()
     new TestDataHelper("root-shape-is-array").learnBaselineEvents(
       path = Vector("people"),
       interactions = Vector(objectArray))

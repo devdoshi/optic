@@ -23,7 +23,7 @@ class DiffPreviewerSpec extends FunSpec with JsonFileFixture {
     val rfcId: String = "rfc-1"
     val eventStore = RfcServiceJSFacade.makeEventStore()
     eventStore.append(rfcId, events)
-    implicit val ids = OpticIds.newDeterministicIdGenerator
+    implicit val ids = OpticIds.newDeterministicIdGenerator()
     val rfcService: RfcService = new RfcService(eventStore)
     rfcService.currentState(rfcId)
   }

@@ -15,7 +15,7 @@
           },
           "requestsTrail" : {
             "SpecResponseBody" : {
-              "responseId" : "response_1"
+              "responseId" : "response_0"
             }
           },
           "shapeDiffResult" : {
@@ -30,12 +30,12 @@
                 ]
               },
               "shapeTrail" : {
-                "rootShapeId" : "shape_10",
+                "rootShapeId" : "shape_9",
                 "path" : [
                   {
                     "ObjectFieldTrail" : {
-                      "fieldId" : "parameter_4",
-                      "fieldShapeId" : "shape_7"
+                      "fieldId" : "field_3",
+                      "fieldShapeId" : "shape_6"
                     }
                   }
                 ]
@@ -51,49 +51,49 @@
           "commandsJson" : [
             {
               "AddShape" : {
-                "shapeId" : "shape_3",
+                "shapeId" : "shape_5002",
                 "baseShapeId" : "$object",
                 "name" : ""
               }
             },
             {
               "AddShape" : {
-                "shapeId" : "shape_2",
+                "shapeId" : "shape_5001",
                 "baseShapeId" : "$string",
                 "name" : ""
               }
             },
             {
               "AddField" : {
-                "fieldId" : "parameter_3",
-                "shapeId" : "shape_3",
+                "fieldId" : "field_5000",
+                "shapeId" : "shape_5002",
                 "name" : "nemesis",
                 "shapeDescriptor" : {
                   "FieldShapeFromShape" : {
-                    "fieldId" : "parameter_3",
-                    "shapeId" : "shape_2"
+                    "fieldId" : "field_5000",
+                    "shapeId" : "shape_5001"
                   }
                 }
               }
             },
             {
               "AddShape" : {
-                "shapeId" : "shape_1",
+                "shapeId" : "shape_5000",
                 "baseShapeId" : "$oneOf",
                 "name" : ""
               }
             },
             {
               "AddShapeParameter" : {
-                "shapeParameterId" : "parameter_1",
-                "shapeId" : "shape_1",
+                "shapeParameterId" : "shape-parameter_5000",
+                "shapeId" : "shape_5000",
                 "name" : ""
               }
             },
             {
               "AddShapeParameter" : {
-                "shapeParameterId" : "parameter_2",
-                "shapeId" : "shape_1",
+                "shapeParameterId" : "shape-parameter_5001",
+                "shapeId" : "shape_5000",
                 "name" : ""
               }
             },
@@ -101,13 +101,13 @@
               "SetParameterShape" : {
                 "shapeDescriptor" : {
                   "ProviderInShape" : {
-                    "shapeId" : "shape_1",
+                    "shapeId" : "shape_5000",
                     "providerDescriptor" : {
                       "ShapeProvider" : {
-                        "shapeId" : "shape_3"
+                        "shapeId" : "shape_5002"
                       }
                     },
-                    "consumingParameterId" : "parameter_2"
+                    "consumingParameterId" : "shape-parameter_5001"
                   }
                 }
               }
@@ -116,13 +116,13 @@
               "SetParameterShape" : {
                 "shapeDescriptor" : {
                   "ProviderInShape" : {
-                    "shapeId" : "shape_1",
+                    "shapeId" : "shape_5000",
                     "providerDescriptor" : {
                       "ShapeProvider" : {
-                        "shapeId" : "shape_7"
+                        "shapeId" : "shape_6"
                       }
                     },
-                    "consumingParameterId" : "parameter_1"
+                    "consumingParameterId" : "shape-parameter_5000"
                   }
                 }
               }
@@ -131,8 +131,8 @@
               "SetFieldShape" : {
                 "shapeDescriptor" : {
                   "FieldShapeFromShape" : {
-                    "fieldId" : "parameter_4",
-                    "shapeId" : "shape_1"
+                    "fieldId" : "field_3",
+                    "shapeId" : "shape_5000"
                   }
                 }
               }
@@ -144,27 +144,27 @@
           "commandsJson" : [
             {
               "AddShape" : {
-                "shapeId" : "shape_5",
+                "shapeId" : "shape_5004",
                 "baseShapeId" : "$object",
                 "name" : ""
               }
             },
             {
               "AddShape" : {
-                "shapeId" : "shape_4",
+                "shapeId" : "shape_5003",
                 "baseShapeId" : "$string",
                 "name" : ""
               }
             },
             {
               "AddField" : {
-                "fieldId" : "parameter_4",
-                "shapeId" : "shape_5",
+                "fieldId" : "field_5001",
+                "shapeId" : "shape_5004",
                 "name" : "nemesis",
                 "shapeDescriptor" : {
                   "FieldShapeFromShape" : {
-                    "fieldId" : "parameter_4",
-                    "shapeId" : "shape_4"
+                    "fieldId" : "field_5001",
+                    "shapeId" : "shape_5003"
                   }
                 }
               }
@@ -173,8 +173,8 @@
               "SetFieldShape" : {
                 "shapeDescriptor" : {
                   "FieldShapeFromShape" : {
-                    "fieldId" : "parameter_4",
-                    "shapeId" : "shape_5"
+                    "fieldId" : "field_3",
+                    "shapeId" : "shape_5004"
                   }
                 }
               }
@@ -183,10 +183,10 @@
         }
       ],
       "preview" : [
-        "Vector((List(),ExampleObject(List(),Some(shape_10),List(List(JsonObjectKey(name)), List(JsonObjectKey(rivals)), List(JsonObjectKey(stats))),List(),List(),Set())), (List(JsonObjectKey(name)),ExampleObject(List(JsonObjectKey(name)),Some(shape_4),List(List(JsonObjectKey(name), JsonObjectKey(first)), List(JsonObjectKey(name), JsonObjectKey(last))),List(),List(),Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(first)),$string,Some(shape_2),\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(last)),$string,Some(shape_3),\"C\",Set())), (List(JsonObjectKey(rivals)),ExampleObject(List(JsonObjectKey(rivals)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonObjectKey(nemesis))),Set())), (List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),$string,None,\"Brad\",Set())), (List(JsonObjectKey(stats)),ExampleObject(List(JsonObjectKey(stats)),Some(shape_9),List(List(JsonObjectKey(stats), JsonObjectKey(rank))),List(),List(),Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),ExamplePrimitive(List(JsonObjectKey(stats), JsonObjectKey(rank)),$number,Some(shape_8),1,Set())))",
-        "Vector((List(JsonObjectKey(name)),KnownExampleField(List(JsonObjectKey(name)),name,parameter_3,shape_4,{\n  \"first\" : \"Bob\",\n  \"last\" : \"C\"\n},Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(first)),first,parameter_1,shape_2,\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(last)),last,parameter_2,shape_3,\"C\",Set())), (List(JsonObjectKey(rivals)),KnownExampleField(List(JsonObjectKey(rivals)),rivals,parameter_4,shape_7,{\n  \"nemesis\" : \"Brad\"\n},Set(UnmatchedShape(List(JsonObjectKey(rivals)),ShapeTrail(shape_10,List(ObjectFieldTrail(parameter_4,shape_7))))))), (List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),nemesis,\"Brad\",Set())), (List(JsonObjectKey(stats)),KnownExampleField(List(JsonObjectKey(stats)),stats,parameter_6,shape_9,{\n  \"rank\" : 1\n},Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),KnownExampleField(List(JsonObjectKey(stats), JsonObjectKey(rank)),rank,parameter_5,shape_8,1,Set())))",
+        "Vector((List(),ExampleObject(List(),Some(shape_9),List(List(JsonObjectKey(name)), List(JsonObjectKey(rivals)), List(JsonObjectKey(stats))),List(),List(),Set())), (List(JsonObjectKey(name)),ExampleObject(List(JsonObjectKey(name)),Some(shape_3),List(List(JsonObjectKey(name), JsonObjectKey(first)), List(JsonObjectKey(name), JsonObjectKey(last))),List(),List(),Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(first)),$string,Some(shape_1),\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(last)),$string,Some(shape_2),\"C\",Set())), (List(JsonObjectKey(rivals)),ExampleObject(List(JsonObjectKey(rivals)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonObjectKey(nemesis))),Set())), (List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),$string,None,\"Brad\",Set())), (List(JsonObjectKey(stats)),ExampleObject(List(JsonObjectKey(stats)),Some(shape_8),List(List(JsonObjectKey(stats), JsonObjectKey(rank))),List(),List(),Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),ExamplePrimitive(List(JsonObjectKey(stats), JsonObjectKey(rank)),$number,Some(shape_7),1,Set())))",
+        "Vector((List(JsonObjectKey(name)),KnownExampleField(List(JsonObjectKey(name)),name,field_2,shape_3,{\n  \"first\" : \"Bob\",\n  \"last\" : \"C\"\n},Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(first)),first,field_0,shape_1,\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(last)),last,field_1,shape_2,\"C\",Set())), (List(JsonObjectKey(rivals)),KnownExampleField(List(JsonObjectKey(rivals)),rivals,field_3,shape_6,{\n  \"nemesis\" : \"Brad\"\n},Set(UnmatchedShape(List(JsonObjectKey(rivals)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6))))))), (List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),nemesis,\"Brad\",Set())), (List(JsonObjectKey(stats)),KnownExampleField(List(JsonObjectKey(stats)),stats,field_5,shape_8,{\n  \"rank\" : 1\n},Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),KnownExampleField(List(JsonObjectKey(stats), JsonObjectKey(rank)),rank,field_4,shape_7,1,Set())))",
         "Vector()",
-        "Vector((shape_10,SpecObject(shape_10,List(SpecField(name,parameter_3,shape_4,Set()), SpecField(rivals,parameter_4,shape_7,Set(UnmatchedShape(List(JsonObjectKey(rivals)),ShapeTrail(shape_10,List(ObjectFieldTrail(parameter_4,shape_7)))))), SpecField(stats,parameter_6,shape_9,Set())),Set())), (shape_2,SpecPrimitive(shape_2,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_3,SpecPrimitive(shape_3,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_4,SpecObject(shape_4,List(SpecField(first,parameter_1,shape_2,Set()), SpecField(last,parameter_2,shape_3,Set())),Set())), (shape_6,SpecPrimitive(shape_6,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_7,SpecArray(shape_7,shape_6,RenderName(List(NameComponent(List of ,ListColor,,Some(shape_6),Some(shape_6)))),Set())), (shape_8,SpecPrimitive(shape_8,$number,RenderName(List(NameComponent(Number,NumberColor,,None,None))),Set())), (shape_9,SpecObject(shape_9,List(SpecField(rank,parameter_5,shape_8,Set())),Set())))"
+        "Vector((shape_1,SpecPrimitive(shape_1,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_2,SpecPrimitive(shape_2,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_3,SpecObject(shape_3,List(SpecField(first,field_0,shape_1,Set()), SpecField(last,field_1,shape_2,Set())),Set())), (shape_5,SpecPrimitive(shape_5,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_6,SpecArray(shape_6,shape_5,RenderName(List(NameComponent(List of ,ListColor,,Some(shape_5),Some(shape_5)))),Set())), (shape_7,SpecPrimitive(shape_7,$number,RenderName(List(NameComponent(Number,NumberColor,,None,None))),Set())), (shape_8,SpecObject(shape_8,List(SpecField(rank,field_4,shape_7,Set())),Set())), (shape_9,SpecObject(shape_9,List(SpecField(name,field_2,shape_3,Set()), SpecField(rivals,field_3,shape_6,Set(UnmatchedShape(List(JsonObjectKey(rivals)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6)))))), SpecField(stats,field_5,shape_8,Set())),Set())))"
       ]
     },
     {
@@ -204,7 +204,7 @@
           },
           "requestsTrail" : {
             "SpecResponseBody" : {
-              "responseId" : "response_1"
+              "responseId" : "response_0"
             }
           },
           "shapeDiffResult" : {
@@ -224,12 +224,12 @@
                 ]
               },
               "shapeTrail" : {
-                "rootShapeId" : "shape_10",
+                "rootShapeId" : "shape_9",
                 "path" : [
                   {
                     "ObjectFieldTrail" : {
-                      "fieldId" : "parameter_4",
-                      "fieldShapeId" : "shape_7"
+                      "fieldId" : "field_3",
+                      "fieldShapeId" : "shape_6"
                     }
                   }
                 ]
@@ -245,7 +245,7 @@
           "commandsJson" : [
             {
               "AddShape" : {
-                "shapeId" : "shape_6",
+                "shapeId" : "shape_5005",
                 "baseShapeId" : "$string",
                 "name" : ""
               }
@@ -254,10 +254,10 @@
               "SetParameterShape" : {
                 "shapeDescriptor" : {
                   "ProviderInShape" : {
-                    "shapeId" : "shape_7",
+                    "shapeId" : "shape_6",
                     "providerDescriptor" : {
                       "ShapeProvider" : {
-                        "shapeId" : "shape_6"
+                        "shapeId" : "shape_5005"
                       }
                     },
                     "consumingParameterId" : "$listItem"
@@ -269,10 +269,10 @@
         }
       ],
       "preview" : [
-        "Vector((List(),ExampleObject(List(),Some(shape_10),List(List(JsonObjectKey(name)), List(JsonObjectKey(rivals)), List(JsonObjectKey(stats))),List(),List(),Set())), (List(JsonObjectKey(name)),ExampleObject(List(JsonObjectKey(name)),Some(shape_4),List(List(JsonObjectKey(name), JsonObjectKey(first)), List(JsonObjectKey(name), JsonObjectKey(last))),List(),List(),Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(first)),$string,Some(shape_2),\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(last)),$string,Some(shape_3),\"C\",Set())), (List(JsonObjectKey(rivals)),ExampleObject(List(JsonObjectKey(rivals)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonObjectKey(nemesis))),Set())), (List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),$string,None,\"Brad\",Set(UnspecifiedShape(List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),ShapeTrail(shape_10,List(ObjectFieldTrail(parameter_4,shape_7))))))), (List(JsonObjectKey(stats)),ExampleObject(List(JsonObjectKey(stats)),Some(shape_9),List(List(JsonObjectKey(stats), JsonObjectKey(rank))),List(),List(),Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),ExamplePrimitive(List(JsonObjectKey(stats), JsonObjectKey(rank)),$number,Some(shape_8),1,Set())))",
-        "Vector((List(JsonObjectKey(name)),KnownExampleField(List(JsonObjectKey(name)),name,parameter_3,shape_4,{\n  \"first\" : \"Bob\",\n  \"last\" : \"C\"\n},Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(first)),first,parameter_1,shape_2,\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(last)),last,parameter_2,shape_3,\"C\",Set())), (List(JsonObjectKey(rivals)),KnownExampleField(List(JsonObjectKey(rivals)),rivals,parameter_4,shape_7,{\n  \"nemesis\" : \"Brad\"\n},Set())), (List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),nemesis,\"Brad\",Set())), (List(JsonObjectKey(stats)),KnownExampleField(List(JsonObjectKey(stats)),stats,parameter_6,shape_9,{\n  \"rank\" : 1\n},Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),KnownExampleField(List(JsonObjectKey(stats), JsonObjectKey(rank)),rank,parameter_5,shape_8,1,Set())))",
+        "Vector((List(),ExampleObject(List(),Some(shape_9),List(List(JsonObjectKey(name)), List(JsonObjectKey(rivals)), List(JsonObjectKey(stats))),List(),List(),Set())), (List(JsonObjectKey(name)),ExampleObject(List(JsonObjectKey(name)),Some(shape_3),List(List(JsonObjectKey(name), JsonObjectKey(first)), List(JsonObjectKey(name), JsonObjectKey(last))),List(),List(),Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(first)),$string,Some(shape_1),\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(last)),$string,Some(shape_2),\"C\",Set())), (List(JsonObjectKey(rivals)),ExampleObject(List(JsonObjectKey(rivals)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonObjectKey(nemesis))),Set())), (List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),$string,None,\"Brad\",Set(UnspecifiedShape(List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6))))))), (List(JsonObjectKey(stats)),ExampleObject(List(JsonObjectKey(stats)),Some(shape_8),List(List(JsonObjectKey(stats), JsonObjectKey(rank))),List(),List(),Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),ExamplePrimitive(List(JsonObjectKey(stats), JsonObjectKey(rank)),$number,Some(shape_7),1,Set())))",
+        "Vector((List(JsonObjectKey(name)),KnownExampleField(List(JsonObjectKey(name)),name,field_2,shape_3,{\n  \"first\" : \"Bob\",\n  \"last\" : \"C\"\n},Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(first)),first,field_0,shape_1,\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(last)),last,field_1,shape_2,\"C\",Set())), (List(JsonObjectKey(rivals)),KnownExampleField(List(JsonObjectKey(rivals)),rivals,field_3,shape_6,{\n  \"nemesis\" : \"Brad\"\n},Set())), (List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),nemesis,\"Brad\",Set())), (List(JsonObjectKey(stats)),KnownExampleField(List(JsonObjectKey(stats)),stats,field_5,shape_8,{\n  \"rank\" : 1\n},Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),KnownExampleField(List(JsonObjectKey(stats), JsonObjectKey(rank)),rank,field_4,shape_7,1,Set())))",
         "Vector()",
-        "Vector((shape_10,SpecObject(shape_10,List(SpecField(name,parameter_3,shape_4,Set()), SpecField(rivals,parameter_4,shape_7,Set(UnspecifiedShape(List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),ShapeTrail(shape_10,List(ObjectFieldTrail(parameter_4,shape_7)))))), SpecField(stats,parameter_6,shape_9,Set())),Set())), (shape_2,SpecPrimitive(shape_2,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_3,SpecPrimitive(shape_3,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_4,SpecObject(shape_4,List(SpecField(first,parameter_1,shape_2,Set()), SpecField(last,parameter_2,shape_3,Set())),Set())), (shape_6,SpecPrimitive(shape_6,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_7,SpecArray(shape_7,shape_6,RenderName(List(NameComponent(List of ,ListColor,,Some(shape_6),Some(shape_6)))),Set())), (shape_8,SpecPrimitive(shape_8,$number,RenderName(List(NameComponent(Number,NumberColor,,None,None))),Set())), (shape_9,SpecObject(shape_9,List(SpecField(rank,parameter_5,shape_8,Set())),Set())))"
+        "Vector((shape_1,SpecPrimitive(shape_1,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_2,SpecPrimitive(shape_2,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_3,SpecObject(shape_3,List(SpecField(first,field_0,shape_1,Set()), SpecField(last,field_1,shape_2,Set())),Set())), (shape_5,SpecPrimitive(shape_5,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_6,SpecArray(shape_6,shape_5,RenderName(List(NameComponent(List of ,ListColor,,Some(shape_5),Some(shape_5)))),Set())), (shape_7,SpecPrimitive(shape_7,$number,RenderName(List(NameComponent(Number,NumberColor,,None,None))),Set())), (shape_8,SpecObject(shape_8,List(SpecField(rank,field_4,shape_7,Set())),Set())), (shape_9,SpecObject(shape_9,List(SpecField(name,field_2,shape_3,Set()), SpecField(rivals,field_3,shape_6,Set(UnspecifiedShape(List(JsonObjectKey(rivals), JsonObjectKey(nemesis)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6)))))), SpecField(stats,field_5,shape_8,Set())),Set())))"
       ]
     }
   ]

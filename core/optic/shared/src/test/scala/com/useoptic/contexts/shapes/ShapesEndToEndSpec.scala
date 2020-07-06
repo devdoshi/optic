@@ -11,7 +11,7 @@ import org.scalatest.FunSpec
 class ShapesEndToEndSpec extends FunSpec {
   def fixture(commands: Seq[RfcCommand]): (Vector[RfcEvent], ShapesState) = {
     println("Steps:")
-    implicit val ids = OpticIds.newDeterministicIdGenerator
+    implicit val ids = OpticIds.newDeterministicIdGenerator()
     commands.foreach(println)
 
     println("Running...")

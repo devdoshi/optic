@@ -16,7 +16,7 @@ import io.circe.literal._
 class ResolverSpec extends FunSpec {
   describe("resolving trails") {
     describe("given a spec with a request body that is an object") {
-      val builtShape = DistributionAwareShapeBuilder.toCommands(Vector(JsonLikeFrom.json(json"""{"f":[123]}""").get))(OpticIds.newDeterministicIdGenerator)
+      val builtShape = DistributionAwareShapeBuilder.toCommands(Vector(JsonLikeFrom.json(json"""{"f":[123]}""").get))(OpticIds.newDeterministicIdGenerator())
       val rfcState = TestHelpers.fromCommands(builtShape._2.flatten)
       val resolvers = new DefaultShapesResolvers(rfcState)
 
@@ -36,7 +36,7 @@ class ResolverSpec extends FunSpec {
       }
     }
     describe("given a spec with a request body that is an array") {
-      val builtShape = DistributionAwareShapeBuilder.toCommands(Vector(JsonLikeFrom.json(json"""[{"id": 1}]""").get))(OpticIds.newDeterministicIdGenerator)
+      val builtShape = DistributionAwareShapeBuilder.toCommands(Vector(JsonLikeFrom.json(json"""[{"id": 1}]""").get))(OpticIds.newDeterministicIdGenerator())
       val rfcState = TestHelpers.fromCommands(builtShape._2.flatten)
       val resolvers = new DefaultShapesResolvers(rfcState)
       it("should resolve the root as a list") {

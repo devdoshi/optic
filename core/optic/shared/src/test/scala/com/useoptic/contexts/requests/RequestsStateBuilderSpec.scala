@@ -7,7 +7,7 @@ import org.scalatest.FunSpec
 
 class RequestsStateBuilderSpec extends FunSpec {
   def fixture = new {
-    implicit val ids = OpticIds.newDeterministicIdGenerator
+    implicit val ids = OpticIds.newDeterministicIdGenerator()
     val service = new RequestsService(new ShapesService)
     val aggregateId1 = "a1"
 

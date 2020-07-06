@@ -50,7 +50,7 @@ class EndEndDiffTask
   }
 
   override def transform(input: EndEndDiffTask.Input): EndEndDiffTask.DiffOutput = {
-    implicit val ids = OpticIds.newDeterministicIdGenerator
+    implicit val ids = OpticIds.newDeterministicIdGenerator(5000)
     val eventStore = RfcServiceJSFacade.makeEventStore()
     val rfcId = "testRfcId"
     eventStore.append(rfcId, input.events)

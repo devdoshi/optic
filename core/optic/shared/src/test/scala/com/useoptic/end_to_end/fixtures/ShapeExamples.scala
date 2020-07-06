@@ -16,12 +16,12 @@ object ShapeExamples {
 
   private
   def buildBasicShapeFrom(json: Json): (ShapeEntity, RfcState) = {
-    val builtShape = DistributionAwareShapeBuilder.toCommands(Vector(JsonLikeFrom.json(json).get))(OpticIds.newDeterministicIdGenerator)
+    val builtShape = DistributionAwareShapeBuilder.toCommands(Vector(JsonLikeFrom.json(json).get))(OpticIds.newDeterministicIdGenerator())
 
 
     val rfcId: String = "rfc-1"
     val eventStore = RfcServiceJSFacade.makeEventStore()
-    implicit val ids = OpticIds.newDeterministicIdGenerator
+    implicit val ids = OpticIds.newDeterministicIdGenerator()
     val rfcService: RfcService = new RfcService(eventStore)
     rfcService.handleCommands(rfcId, RfcCommandContext("ccc", "sss", "bbb"), builtShape._2.flatten: _*)
     (rfcService.currentState(rfcId).shapesState.shapes(builtShape._1), rfcService.currentState(rfcId))

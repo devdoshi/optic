@@ -15,7 +15,7 @@
           },
           "requestsTrail" : {
             "SpecResponseBody" : {
-              "responseId" : "response_1"
+              "responseId" : "response_0"
             }
           },
           "shapeDiffResult" : {
@@ -25,7 +25,7 @@
                 ]
               },
               "shapeTrail" : {
-                "rootShapeId" : "shape_3",
+                "rootShapeId" : "shape_2",
                 "path" : [
                 ]
               }
@@ -40,49 +40,49 @@
           "commandsJson" : [
             {
               "AddShape" : {
-                "shapeId" : "shape_3",
+                "shapeId" : "shape_5002",
                 "baseShapeId" : "$object",
                 "name" : ""
               }
             },
             {
               "AddShape" : {
-                "shapeId" : "shape_2",
+                "shapeId" : "shape_5001",
                 "baseShapeId" : "$string",
                 "name" : ""
               }
             },
             {
               "AddField" : {
-                "fieldId" : "parameter_3",
-                "shapeId" : "shape_3",
+                "fieldId" : "field_5000",
+                "shapeId" : "shape_5002",
                 "name" : "foo",
                 "shapeDescriptor" : {
                   "FieldShapeFromShape" : {
-                    "fieldId" : "parameter_3",
-                    "shapeId" : "shape_2"
+                    "fieldId" : "field_5000",
+                    "shapeId" : "shape_5001"
                   }
                 }
               }
             },
             {
               "AddShape" : {
-                "shapeId" : "shape_1",
+                "shapeId" : "shape_5000",
                 "baseShapeId" : "$oneOf",
                 "name" : ""
               }
             },
             {
               "AddShapeParameter" : {
-                "shapeParameterId" : "parameter_1",
-                "shapeId" : "shape_1",
+                "shapeParameterId" : "shape-parameter_5000",
+                "shapeId" : "shape_5000",
                 "name" : ""
               }
             },
             {
               "AddShapeParameter" : {
-                "shapeParameterId" : "parameter_2",
-                "shapeId" : "shape_1",
+                "shapeParameterId" : "shape-parameter_5001",
+                "shapeId" : "shape_5000",
                 "name" : ""
               }
             },
@@ -90,13 +90,13 @@
               "SetParameterShape" : {
                 "shapeDescriptor" : {
                   "ProviderInShape" : {
-                    "shapeId" : "shape_1",
+                    "shapeId" : "shape_5000",
                     "providerDescriptor" : {
                       "ShapeProvider" : {
-                        "shapeId" : "shape_3"
+                        "shapeId" : "shape_5002"
                       }
                     },
-                    "consumingParameterId" : "parameter_2"
+                    "consumingParameterId" : "shape-parameter_5001"
                   }
                 }
               }
@@ -108,35 +108,35 @@
           "commandsJson" : [
             {
               "AddShape" : {
-                "shapeId" : "shape_5",
+                "shapeId" : "shape_5004",
                 "baseShapeId" : "$object",
                 "name" : ""
               }
             },
             {
               "AddShape" : {
-                "shapeId" : "shape_4",
+                "shapeId" : "shape_5003",
                 "baseShapeId" : "$string",
                 "name" : ""
               }
             },
             {
               "AddField" : {
-                "fieldId" : "parameter_4",
-                "shapeId" : "shape_5",
+                "fieldId" : "field_5001",
+                "shapeId" : "shape_5004",
                 "name" : "foo",
                 "shapeDescriptor" : {
                   "FieldShapeFromShape" : {
-                    "fieldId" : "parameter_4",
-                    "shapeId" : "shape_4"
+                    "fieldId" : "field_5001",
+                    "shapeId" : "shape_5003"
                   }
                 }
               }
             },
             {
               "SetBaseShape" : {
-                "shapeId" : "shape_3",
-                "baseShapeId" : "shape_5"
+                "shapeId" : "shape_2",
+                "baseShapeId" : "shape_5004"
               }
             }
           ]
@@ -146,7 +146,7 @@
         "Vector((List(),ExampleObject(List(),None,List(),List(),List(List(JsonObjectKey(foo))),Set())), (List(JsonObjectKey(foo)),ExamplePrimitive(List(JsonObjectKey(foo)),$string,None,\"bar\",Set())))",
         "Vector((List(JsonObjectKey(foo)),UnexpectedExampleField(List(JsonObjectKey(foo)),foo,\"bar\",Set())))",
         "Vector()",
-        "Vector((shape_2,SpecPrimitive(shape_2,$unknown,RenderName(List()),Set())), (shape_3,SpecArray(shape_3,shape_2,RenderName(List(NameComponent(List of ,ListColor,,Some(shape_2),Some(shape_2)))),Set())))"
+        "Vector((shape_1,SpecPrimitive(shape_1,$unknown,RenderName(List()),Set())), (shape_2,SpecArray(shape_2,shape_1,RenderName(List(NameComponent(List of ,ListColor,,Some(shape_1),Some(shape_1)))),Set())))"
       ]
     },
     {
@@ -164,7 +164,7 @@
           },
           "requestsTrail" : {
             "SpecResponseBody" : {
-              "responseId" : "response_1"
+              "responseId" : "response_0"
             }
           },
           "shapeDiffResult" : {
@@ -179,7 +179,7 @@
                 ]
               },
               "shapeTrail" : {
-                "rootShapeId" : "shape_3",
+                "rootShapeId" : "shape_2",
                 "path" : [
                 ]
               }
@@ -194,7 +194,7 @@
           "commandsJson" : [
             {
               "AddShape" : {
-                "shapeId" : "shape_6",
+                "shapeId" : "shape_5005",
                 "baseShapeId" : "$string",
                 "name" : ""
               }
@@ -203,10 +203,10 @@
               "SetParameterShape" : {
                 "shapeDescriptor" : {
                   "ProviderInShape" : {
-                    "shapeId" : "shape_3",
+                    "shapeId" : "shape_2",
                     "providerDescriptor" : {
                       "ShapeProvider" : {
-                        "shapeId" : "shape_6"
+                        "shapeId" : "shape_5005"
                       }
                     },
                     "consumingParameterId" : "$listItem"
@@ -218,10 +218,10 @@
         }
       ],
       "preview" : [
-        "Vector((List(),ExampleObject(List(),None,List(),List(),List(List(JsonObjectKey(foo))),Set())), (List(JsonObjectKey(foo)),ExamplePrimitive(List(JsonObjectKey(foo)),$string,None,\"bar\",Set(UnspecifiedShape(List(JsonObjectKey(foo)),ShapeTrail(shape_3,List()))))))",
+        "Vector((List(),ExampleObject(List(),None,List(),List(),List(List(JsonObjectKey(foo))),Set())), (List(JsonObjectKey(foo)),ExamplePrimitive(List(JsonObjectKey(foo)),$string,None,\"bar\",Set(UnspecifiedShape(List(JsonObjectKey(foo)),ShapeTrail(shape_2,List()))))))",
         "Vector((List(JsonObjectKey(foo)),UnexpectedExampleField(List(JsonObjectKey(foo)),foo,\"bar\",Set())))",
         "Vector()",
-        "Vector((shape_2,SpecPrimitive(shape_2,$unknown,RenderName(List()),Set())), (shape_3,SpecArray(shape_3,shape_2,RenderName(List(NameComponent(List of ,ListColor,,Some(shape_2),Some(shape_2)))),Set())))"
+        "Vector((shape_1,SpecPrimitive(shape_1,$unknown,RenderName(List()),Set())), (shape_2,SpecArray(shape_2,shape_1,RenderName(List(NameComponent(List of ,ListColor,,Some(shape_1),Some(shape_1)))),Set())))"
       ]
     }
   ]
