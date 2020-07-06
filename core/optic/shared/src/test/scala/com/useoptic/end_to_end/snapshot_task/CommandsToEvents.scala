@@ -22,7 +22,7 @@ class CommandsToEventsSnapshotTask
   override def transform(input: Vector[RfcCommand]): Vector[RfcEvent] = {
     val rfcId: String = "rfc-1"
     val eventStore = RfcServiceJSFacade.makeEventStore()
-    implicit val ids = OpticIds.newDeterministicIdGenerator
+    implicit val ids = OpticIds.newDeterministicIdGenerator()
     val rfcService: RfcService = new RfcService(eventStore)
     rfcService.handleCommands(rfcId, RfcCommandContext("ccc", "sss", "bbb"), input: _*)
 

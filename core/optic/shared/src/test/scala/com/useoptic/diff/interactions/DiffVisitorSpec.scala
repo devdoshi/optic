@@ -40,7 +40,7 @@ class DiffVisitorSpec extends FunSpec {
       val requestId = "req1"
       val responseId = "res1"
       val requestContentType = "ccc"
-      val builtShape = DistributionAwareShapeBuilder.toCommands(Vector(JsonLikeFrom.json(json"""{"f":[123]}""").get))(OpticIds.newDeterministicIdGenerator)
+      val builtShape = DistributionAwareShapeBuilder.toCommands(Vector(JsonLikeFrom.json(json"""{"f":[123]}""").get))(OpticIds.newDeterministicIdGenerator())
       val initialCommands = builtShape._2.flatten ++ Seq(
         AddRequest(requestId, Commands.rootPathId, "POST"),
         SetRequestBodyShape(requestId, ShapedBodyDescriptor(requestContentType, builtShape._1, isRemoved = false)),

@@ -24,7 +24,7 @@ class SpecHelpers {
   def simpleGet(responseBody: Json): Seq[RfcCommand] = {
     val requestId = requestIdGenerator.nextId()
     val responseId = responseIdGenerator.nextId()
-    val builtShape = DistributionAwareShapeBuilder.toCommands(Vector(JsonLikeFrom.json(responseBody).get))(OpticIds.newDeterministicIdGenerator)
+    val builtShape = DistributionAwareShapeBuilder.toCommands(Vector(JsonLikeFrom.json(responseBody).get))(OpticIds.newDeterministicIdGenerator())
     builtShape._2.flatten ++ Seq(
       RequestsCommands.AddRequest(requestId, "root", "GET"),
       RequestsCommands.AddResponse(responseId, requestId, 200),
@@ -35,7 +35,7 @@ class SpecHelpers {
   def simplePost(requestBody: Json): Seq[RfcCommand] = {
     val requestId = requestIdGenerator.nextId()
     val responseId = responseIdGenerator.nextId()
-    val builtShape = DistributionAwareShapeBuilder.toCommands(Vector(JsonLikeFrom.json(requestBody).get))(OpticIds.newDeterministicIdGenerator)
+    val builtShape = DistributionAwareShapeBuilder.toCommands(Vector(JsonLikeFrom.json(requestBody).get))(OpticIds.newDeterministicIdGenerator())
     builtShape._2.flatten ++ Seq(
       RequestsCommands.AddRequest(requestId, "root", "POST"),
       RequestsCommands.SetRequestBodyShape(requestId, ShapedBodyDescriptor("application/json", builtShape._1, isRemoved = false)),

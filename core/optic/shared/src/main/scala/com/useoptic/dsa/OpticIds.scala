@@ -9,8 +9,8 @@ trait OpticIds[T] {
   def nextId(): T
 }
 
-class SequentialIdGenerator(prefix: String = "", delimiter: String = "") extends OpticIds[String] {
-  val source = Stream.from(1, 1).iterator
+class SequentialIdGenerator(prefix: String = "", delimiter: String = "", startingNumber: Int=1) extends OpticIds[String] {
+  val source = Stream.from(startingNumber, 1).iterator
 
   override def nextId(): String = {
     val currentValue = source.next()
@@ -38,26 +38,26 @@ abstract class OpticDomainIds {
 
 object OpticIds {
 
-  def newDeterministicIdGenerator = new OpticDomainIds {
-    private val _shape = new SequentialIdGenerator("shape", "_")
+  def newDeterministicIdGenerator(startingNumber: Int = 0) = new OpticDomainIds {
+    private val _shape = new SequentialIdGenerator("shape", "_", startingNumber)
     override def newShapeId: ShapeId = _shape.nextId()
 
-    private val _path = new SequentialIdGenerator("path", "_")
+    private val _path = new SequentialIdGenerator("path", "_", startingNumber)
     override def newPathId: PathComponentId = _path.nextId()
 
-    private val _request = new SequentialIdGenerator("request", "_")
+    private val _request = new SequentialIdGenerator("request", "_", startingNumber)
     override def newRequestId: RequestId = _request.nextId()
 
-    private val _response = new SequentialIdGenerator("response", "_")
+    private val _response = new SequentialIdGenerator("response", "_", startingNumber)
     override def newResponseId: ResponseId = _response.nextId()
 
-    private val _shapeParameter = new SequentialIdGenerator("shape-parameter", "_")
+    private val _shapeParameter = new SequentialIdGenerator("shape-parameter", "_", startingNumber)
     override def newShapeParameterId: ShapeParameterId = _shapeParameter.nextId()
 
-    private val _requestParameter = new SequentialIdGenerator("request-parameter", "_")
+    private val _requestParameter = new SequentialIdGenerator("request-parameter", "_", startingNumber)
     override def newRequestParameterId: RequestParameterId = _requestParameter.nextId()
 
-    private val _field = new SequentialIdGenerator("field", "_")
+    private val _field = new SequentialIdGenerator("field", "_", startingNumber)
     override def newFieldId: FieldId = _field.nextId()
   }
 
@@ -86,7 +86,7 @@ object OpticIds {
 
   def generator: OpticDomainIds = {
     if (System.getenv("SCALA_ENV") == "test") {
-      newDeterministicIdGenerator
+      newDeterministicIdGenerator()
     } else {
       newRandomIdGenerator
     }

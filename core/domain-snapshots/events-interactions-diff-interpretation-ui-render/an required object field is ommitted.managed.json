@@ -2,7 +2,7 @@
   "events" : [
     {
       "PathComponentAdded" : {
-        "pathId" : "path_1",
+        "pathId" : "path_0",
         "parentPathId" : "root",
         "name" : "users",
         "eventContext" : {
@@ -15,15 +15,15 @@
     },
     {
       "PathParameterAdded" : {
-        "pathId" : "path_2",
-        "parentPathId" : "path_1",
+        "pathId" : "path_1",
+        "parentPathId" : "path_0",
         "name" : ":userId",
         "eventContext" : null
       }
     },
     {
       "ShapeAdded" : {
-        "shapeId" : "shape_11",
+        "shapeId" : "shape_10",
         "baseShapeId" : "$string",
         "parameters" : {
           "DynamicParameterList" : {
@@ -37,9 +37,9 @@
     },
     {
       "PathParameterShapeSet" : {
-        "pathId" : "path_2",
+        "pathId" : "path_1",
         "shapeDescriptor" : {
-          "shapeId" : "shape_11",
+          "shapeId" : "shape_10",
           "isRemoved" : false
         },
         "eventContext" : null
@@ -47,8 +47,8 @@
     },
     {
       "PathComponentAdded" : {
-        "pathId" : "path_3",
-        "parentPathId" : "path_2",
+        "pathId" : "path_2",
+        "parentPathId" : "path_1",
         "name" : "profile",
         "eventContext" : {
           "clientId" : "ccc",
@@ -60,8 +60,8 @@
     },
     {
       "RequestParameterAddedByPathAndMethod" : {
-        "parameterId" : "parameter_7",
-        "pathId" : "path_3",
+        "parameterId" : "request-parameter_0",
+        "pathId" : "path_2",
         "httpMethod" : "GET",
         "parameterLocation" : "query",
         "name" : "queryString",
@@ -75,7 +75,7 @@
     },
     {
       "ShapeAdded" : {
-        "shapeId" : "shape_12",
+        "shapeId" : "shape_11",
         "baseShapeId" : "$object",
         "parameters" : {
           "DynamicParameterList" : {
@@ -94,9 +94,9 @@
     },
     {
       "RequestParameterShapeSet" : {
-        "parameterId" : "parameter_7",
+        "parameterId" : "request-parameter_0",
         "parameterDescriptor" : {
-          "shapeId" : "shape_12",
+          "shapeId" : "shape_11",
           "isRemoved" : false
         },
         "eventContext" : {
@@ -109,8 +109,8 @@
     },
     {
       "RequestAdded" : {
-        "requestId" : "request_1",
-        "pathId" : "path_3",
+        "requestId" : "request_0",
+        "pathId" : "path_2",
         "httpMethod" : "GET",
         "eventContext" : {
           "clientId" : "ccc",
@@ -122,8 +122,8 @@
     },
     {
       "ResponseAddedByPathAndMethod" : {
-        "responseId" : "response_1",
-        "pathId" : "path_3",
+        "responseId" : "response_0",
+        "pathId" : "path_2",
         "httpMethod" : "GET",
         "httpStatusCode" : 200,
         "eventContext" : {
@@ -136,7 +136,7 @@
     },
     {
       "ShapeAdded" : {
-        "shapeId" : "shape_10",
+        "shapeId" : "shape_9",
         "baseShapeId" : "$object",
         "parameters" : {
           "DynamicParameterList" : {
@@ -155,7 +155,7 @@
     },
     {
       "ShapeAdded" : {
-        "shapeId" : "shape_4",
+        "shapeId" : "shape_3",
         "baseShapeId" : "$object",
         "parameters" : {
           "DynamicParameterList" : {
@@ -164,6 +164,44 @@
           }
         },
         "name" : "",
+        "eventContext" : {
+          "clientId" : "ccc",
+          "clientSessionId" : "sss",
+          "clientCommandBatchId" : "bbb",
+          "createdAt" : "NOW"
+        }
+      }
+    },
+    {
+      "ShapeAdded" : {
+        "shapeId" : "shape_1",
+        "baseShapeId" : "$string",
+        "parameters" : {
+          "DynamicParameterList" : {
+            "shapeParameterIds" : [
+            ]
+          }
+        },
+        "name" : "",
+        "eventContext" : {
+          "clientId" : "ccc",
+          "clientSessionId" : "sss",
+          "clientCommandBatchId" : "bbb",
+          "createdAt" : "NOW"
+        }
+      }
+    },
+    {
+      "FieldAdded" : {
+        "fieldId" : "field_0",
+        "shapeId" : "shape_3",
+        "name" : "first",
+        "shapeDescriptor" : {
+          "FieldShapeFromShape" : {
+            "fieldId" : "field_0",
+            "shapeId" : "shape_1"
+          }
+        },
         "eventContext" : {
           "clientId" : "ccc",
           "clientSessionId" : "sss",
@@ -193,12 +231,12 @@
     },
     {
       "FieldAdded" : {
-        "fieldId" : "parameter_1",
-        "shapeId" : "shape_4",
-        "name" : "first",
+        "fieldId" : "field_1",
+        "shapeId" : "shape_3",
+        "name" : "last",
         "shapeDescriptor" : {
           "FieldShapeFromShape" : {
-            "fieldId" : "parameter_1",
+            "fieldId" : "field_1",
             "shapeId" : "shape_2"
           }
         },
@@ -211,32 +249,13 @@
       }
     },
     {
-      "ShapeAdded" : {
-        "shapeId" : "shape_3",
-        "baseShapeId" : "$string",
-        "parameters" : {
-          "DynamicParameterList" : {
-            "shapeParameterIds" : [
-            ]
-          }
-        },
-        "name" : "",
-        "eventContext" : {
-          "clientId" : "ccc",
-          "clientSessionId" : "sss",
-          "clientCommandBatchId" : "bbb",
-          "createdAt" : "NOW"
-        }
-      }
-    },
-    {
       "FieldAdded" : {
-        "fieldId" : "parameter_2",
-        "shapeId" : "shape_4",
-        "name" : "last",
+        "fieldId" : "field_2",
+        "shapeId" : "shape_9",
+        "name" : "name",
         "shapeDescriptor" : {
           "FieldShapeFromShape" : {
-            "fieldId" : "parameter_2",
+            "fieldId" : "field_2",
             "shapeId" : "shape_3"
           }
         },
@@ -249,27 +268,8 @@
       }
     },
     {
-      "FieldAdded" : {
-        "fieldId" : "parameter_3",
-        "shapeId" : "shape_10",
-        "name" : "name",
-        "shapeDescriptor" : {
-          "FieldShapeFromShape" : {
-            "fieldId" : "parameter_3",
-            "shapeId" : "shape_4"
-          }
-        },
-        "eventContext" : {
-          "clientId" : "ccc",
-          "clientSessionId" : "sss",
-          "clientCommandBatchId" : "bbb",
-          "createdAt" : "NOW"
-        }
-      }
-    },
-    {
       "ShapeAdded" : {
-        "shapeId" : "shape_6",
+        "shapeId" : "shape_5",
         "baseShapeId" : "$string",
         "parameters" : {
           "DynamicParameterList" : {
@@ -288,7 +288,7 @@
     },
     {
       "ShapeAdded" : {
-        "shapeId" : "shape_7",
+        "shapeId" : "shape_6",
         "baseShapeId" : "$list",
         "parameters" : {
           "DynamicParameterList" : {
@@ -307,13 +307,13 @@
     },
     {
       "FieldAdded" : {
-        "fieldId" : "parameter_4",
-        "shapeId" : "shape_10",
+        "fieldId" : "field_3",
+        "shapeId" : "shape_9",
         "name" : "rivals",
         "shapeDescriptor" : {
           "FieldShapeFromShape" : {
-            "fieldId" : "parameter_4",
-            "shapeId" : "shape_7"
+            "fieldId" : "field_3",
+            "shapeId" : "shape_6"
           }
         },
         "eventContext" : {
@@ -326,7 +326,7 @@
     },
     {
       "ShapeAdded" : {
-        "shapeId" : "shape_9",
+        "shapeId" : "shape_8",
         "baseShapeId" : "$object",
         "parameters" : {
           "DynamicParameterList" : {
@@ -345,7 +345,7 @@
     },
     {
       "ShapeAdded" : {
-        "shapeId" : "shape_8",
+        "shapeId" : "shape_7",
         "baseShapeId" : "$number",
         "parameters" : {
           "DynamicParameterList" : {
@@ -364,13 +364,13 @@
     },
     {
       "FieldAdded" : {
-        "fieldId" : "parameter_5",
-        "shapeId" : "shape_9",
+        "fieldId" : "field_4",
+        "shapeId" : "shape_8",
         "name" : "rank",
         "shapeDescriptor" : {
           "FieldShapeFromShape" : {
-            "fieldId" : "parameter_5",
-            "shapeId" : "shape_8"
+            "fieldId" : "field_4",
+            "shapeId" : "shape_7"
           }
         },
         "eventContext" : {
@@ -383,13 +383,13 @@
     },
     {
       "FieldAdded" : {
-        "fieldId" : "parameter_6",
-        "shapeId" : "shape_10",
+        "fieldId" : "field_5",
+        "shapeId" : "shape_9",
         "name" : "stats",
         "shapeDescriptor" : {
           "FieldShapeFromShape" : {
-            "fieldId" : "parameter_6",
-            "shapeId" : "shape_9"
+            "fieldId" : "field_5",
+            "shapeId" : "shape_8"
           }
         },
         "eventContext" : {
@@ -404,10 +404,10 @@
       "ShapeParameterShapeSet" : {
         "shapeDescriptor" : {
           "ProviderInShape" : {
-            "shapeId" : "shape_7",
+            "shapeId" : "shape_6",
             "providerDescriptor" : {
               "ShapeProvider" : {
-                "shapeId" : "shape_6"
+                "shapeId" : "shape_5"
               }
             },
             "consumingParameterId" : "$listItem"
@@ -423,10 +423,10 @@
     },
     {
       "ResponseBodySet" : {
-        "responseId" : "response_1",
+        "responseId" : "response_0",
         "bodyDescriptor" : {
           "httpContentType" : "application/json",
-          "shapeId" : "shape_10",
+          "shapeId" : "shape_9",
           "isRemoved" : false
         },
         "eventContext" : {

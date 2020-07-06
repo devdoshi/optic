@@ -15,7 +15,7 @@
           },
           "requestsTrail" : {
             "SpecResponseBody" : {
-              "responseId" : "response_1"
+              "responseId" : "response_0"
             }
           },
           "shapeDiffResult" : {
@@ -35,18 +35,18 @@
                 ]
               },
               "shapeTrail" : {
-                "rootShapeId" : "shape_10",
+                "rootShapeId" : "shape_9",
                 "path" : [
                   {
                     "ObjectFieldTrail" : {
-                      "fieldId" : "parameter_4",
-                      "fieldShapeId" : "shape_7"
+                      "fieldId" : "field_3",
+                      "fieldShapeId" : "shape_6"
                     }
                   },
                   {
                     "ListItemTrail" : {
-                      "listShapeId" : "shape_7",
-                      "itemShapeId" : "shape_6"
+                      "listShapeId" : "shape_6",
+                      "itemShapeId" : "shape_5"
                     }
                   }
                 ]
@@ -62,49 +62,49 @@
           "commandsJson" : [
             {
               "AddShape" : {
-                "shapeId" : "shape_3",
+                "shapeId" : "shape_5002",
                 "baseShapeId" : "$object",
                 "name" : ""
               }
             },
             {
               "AddShape" : {
-                "shapeId" : "shape_2",
+                "shapeId" : "shape_5001",
                 "baseShapeId" : "$string",
                 "name" : ""
               }
             },
             {
               "AddField" : {
-                "fieldId" : "parameter_3",
-                "shapeId" : "shape_3",
+                "fieldId" : "field_5000",
+                "shapeId" : "shape_5002",
                 "name" : "food",
                 "shapeDescriptor" : {
                   "FieldShapeFromShape" : {
-                    "fieldId" : "parameter_3",
-                    "shapeId" : "shape_2"
+                    "fieldId" : "field_5000",
+                    "shapeId" : "shape_5001"
                   }
                 }
               }
             },
             {
               "AddShape" : {
-                "shapeId" : "shape_1",
+                "shapeId" : "shape_5000",
                 "baseShapeId" : "$oneOf",
                 "name" : ""
               }
             },
             {
               "AddShapeParameter" : {
-                "shapeParameterId" : "parameter_1",
-                "shapeId" : "shape_1",
+                "shapeParameterId" : "shape-parameter_5000",
+                "shapeId" : "shape_5000",
                 "name" : ""
               }
             },
             {
               "AddShapeParameter" : {
-                "shapeParameterId" : "parameter_2",
-                "shapeId" : "shape_1",
+                "shapeParameterId" : "shape-parameter_5001",
+                "shapeId" : "shape_5000",
                 "name" : ""
               }
             },
@@ -112,13 +112,13 @@
               "SetParameterShape" : {
                 "shapeDescriptor" : {
                   "ProviderInShape" : {
-                    "shapeId" : "shape_1",
+                    "shapeId" : "shape_5000",
                     "providerDescriptor" : {
                       "ShapeProvider" : {
-                        "shapeId" : "shape_3"
+                        "shapeId" : "shape_5002"
                       }
                     },
-                    "consumingParameterId" : "parameter_2"
+                    "consumingParameterId" : "shape-parameter_5001"
                   }
                 }
               }
@@ -127,13 +127,13 @@
               "SetParameterShape" : {
                 "shapeDescriptor" : {
                   "ProviderInShape" : {
-                    "shapeId" : "shape_1",
+                    "shapeId" : "shape_5000",
                     "providerDescriptor" : {
                       "ShapeProvider" : {
-                        "shapeId" : "shape_6"
+                        "shapeId" : "shape_5"
                       }
                     },
-                    "consumingParameterId" : "parameter_1"
+                    "consumingParameterId" : "shape-parameter_5000"
                   }
                 }
               }
@@ -142,10 +142,10 @@
               "SetParameterShape" : {
                 "shapeDescriptor" : {
                   "ProviderInShape" : {
-                    "shapeId" : "shape_7",
+                    "shapeId" : "shape_6",
                     "providerDescriptor" : {
                       "ShapeProvider" : {
-                        "shapeId" : "shape_1"
+                        "shapeId" : "shape_5000"
                       }
                     },
                     "consumingParameterId" : "$listItem"
@@ -160,27 +160,27 @@
           "commandsJson" : [
             {
               "AddShape" : {
-                "shapeId" : "shape_5",
+                "shapeId" : "shape_5004",
                 "baseShapeId" : "$object",
                 "name" : ""
               }
             },
             {
               "AddShape" : {
-                "shapeId" : "shape_4",
+                "shapeId" : "shape_5003",
                 "baseShapeId" : "$string",
                 "name" : ""
               }
             },
             {
               "AddField" : {
-                "fieldId" : "parameter_4",
-                "shapeId" : "shape_5",
+                "fieldId" : "field_5001",
+                "shapeId" : "shape_5004",
                 "name" : "food",
                 "shapeDescriptor" : {
                   "FieldShapeFromShape" : {
-                    "fieldId" : "parameter_4",
-                    "shapeId" : "shape_4"
+                    "fieldId" : "field_5001",
+                    "shapeId" : "shape_5003"
                   }
                 }
               }
@@ -189,10 +189,10 @@
               "SetParameterShape" : {
                 "shapeDescriptor" : {
                   "ProviderInShape" : {
-                    "shapeId" : "shape_7",
+                    "shapeId" : "shape_6",
                     "providerDescriptor" : {
                       "ShapeProvider" : {
-                        "shapeId" : "shape_5"
+                        "shapeId" : "shape_5004"
                       }
                     },
                     "consumingParameterId" : "$listItem"
@@ -204,10 +204,10 @@
         }
       ],
       "preview" : [
-        "Vector((List(),ExampleObject(List(),Some(shape_10),List(List(JsonObjectKey(name)), List(JsonObjectKey(rivals)), List(JsonObjectKey(stats))),List(),List(),Set())), (List(JsonObjectKey(name)),ExampleObject(List(JsonObjectKey(name)),Some(shape_4),List(List(JsonObjectKey(name), JsonObjectKey(first)), List(JsonObjectKey(name), JsonObjectKey(last))),List(),List(),Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(first)),$string,Some(shape_2),\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(last)),$string,Some(shape_3),\"C\",Set())), (List(JsonObjectKey(rivals)),ExampleArray(List(JsonObjectKey(rivals)),Some(shape_7),Some(shape_6),Vector(List(JsonObjectKey(rivals), JsonArrayItem(0)), List(JsonObjectKey(rivals), JsonArrayItem(1))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0)),ExampleObject(List(JsonObjectKey(rivals), JsonArrayItem(0)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),$string,None,\"rice\",Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1)),ExampleObject(List(JsonObjectKey(rivals), JsonArrayItem(1)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),$string,None,\"cookies\",Set())), (List(JsonObjectKey(stats)),ExampleObject(List(JsonObjectKey(stats)),Some(shape_9),List(List(JsonObjectKey(stats), JsonObjectKey(rank))),List(),List(),Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),ExamplePrimitive(List(JsonObjectKey(stats), JsonObjectKey(rank)),$number,Some(shape_8),1,Set())))",
-        "Vector((List(JsonObjectKey(name)),KnownExampleField(List(JsonObjectKey(name)),name,parameter_3,shape_4,{\n  \"first\" : \"Bob\",\n  \"last\" : \"C\"\n},Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(first)),first,parameter_1,shape_2,\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(last)),last,parameter_2,shape_3,\"C\",Set())), (List(JsonObjectKey(rivals)),KnownExampleField(List(JsonObjectKey(rivals)),rivals,parameter_4,shape_7,[\n  {\n    \"food\" : \"rice\"\n  },\n  {\n    \"food\" : \"cookies\"\n  }\n],Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),food,\"rice\",Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),food,\"cookies\",Set())), (List(JsonObjectKey(stats)),KnownExampleField(List(JsonObjectKey(stats)),stats,parameter_6,shape_9,{\n  \"rank\" : 1\n},Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),KnownExampleField(List(JsonObjectKey(stats), JsonObjectKey(rank)),rank,parameter_5,shape_8,1,Set())))",
-        "Vector((List(JsonObjectKey(rivals), JsonArrayItem(0)),ExampleItem(List(JsonObjectKey(rivals), JsonArrayItem(0)),0,{\n  \"food\" : \"rice\"\n},Set(UnmatchedShape(List(JsonObjectKey(rivals), JsonArrayItem(0)),ShapeTrail(shape_10,List(ObjectFieldTrail(parameter_4,shape_7), ListItemTrail(shape_7,shape_6))))))), (List(JsonObjectKey(rivals), JsonArrayItem(1)),ExampleItem(List(JsonObjectKey(rivals), JsonArrayItem(1)),1,{\n  \"food\" : \"cookies\"\n},Set())))",
-        "Vector((shape_10,SpecObject(shape_10,List(SpecField(name,parameter_3,shape_4,Set()), SpecField(rivals,parameter_4,shape_7,Set()), SpecField(stats,parameter_6,shape_9,Set())),Set())), (shape_2,SpecPrimitive(shape_2,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_3,SpecPrimitive(shape_3,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_4,SpecObject(shape_4,List(SpecField(first,parameter_1,shape_2,Set()), SpecField(last,parameter_2,shape_3,Set())),Set())), (shape_6,SpecPrimitive(shape_6,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set(UnmatchedShape(List(JsonObjectKey(rivals), JsonArrayItem(0)),ShapeTrail(shape_10,List(ObjectFieldTrail(parameter_4,shape_7), ListItemTrail(shape_7,shape_6))))))), (shape_7,SpecArray(shape_7,shape_6,RenderName(List(NameComponent(List of ,ListColor,,Some(shape_6),Some(shape_6)))),Set(UnmatchedShape(List(JsonObjectKey(rivals), JsonArrayItem(0)),ShapeTrail(shape_10,List(ObjectFieldTrail(parameter_4,shape_7), ListItemTrail(shape_7,shape_6))))))), (shape_8,SpecPrimitive(shape_8,$number,RenderName(List(NameComponent(Number,NumberColor,,None,None))),Set())), (shape_9,SpecObject(shape_9,List(SpecField(rank,parameter_5,shape_8,Set())),Set())))"
+        "Vector((List(),ExampleObject(List(),Some(shape_9),List(List(JsonObjectKey(name)), List(JsonObjectKey(rivals)), List(JsonObjectKey(stats))),List(),List(),Set())), (List(JsonObjectKey(name)),ExampleObject(List(JsonObjectKey(name)),Some(shape_3),List(List(JsonObjectKey(name), JsonObjectKey(first)), List(JsonObjectKey(name), JsonObjectKey(last))),List(),List(),Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(first)),$string,Some(shape_1),\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(last)),$string,Some(shape_2),\"C\",Set())), (List(JsonObjectKey(rivals)),ExampleArray(List(JsonObjectKey(rivals)),Some(shape_6),Some(shape_5),Vector(List(JsonObjectKey(rivals), JsonArrayItem(0)), List(JsonObjectKey(rivals), JsonArrayItem(1))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0)),ExampleObject(List(JsonObjectKey(rivals), JsonArrayItem(0)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),$string,None,\"rice\",Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1)),ExampleObject(List(JsonObjectKey(rivals), JsonArrayItem(1)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),$string,None,\"cookies\",Set())), (List(JsonObjectKey(stats)),ExampleObject(List(JsonObjectKey(stats)),Some(shape_8),List(List(JsonObjectKey(stats), JsonObjectKey(rank))),List(),List(),Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),ExamplePrimitive(List(JsonObjectKey(stats), JsonObjectKey(rank)),$number,Some(shape_7),1,Set())))",
+        "Vector((List(JsonObjectKey(name)),KnownExampleField(List(JsonObjectKey(name)),name,field_2,shape_3,{\n  \"first\" : \"Bob\",\n  \"last\" : \"C\"\n},Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(first)),first,field_0,shape_1,\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(last)),last,field_1,shape_2,\"C\",Set())), (List(JsonObjectKey(rivals)),KnownExampleField(List(JsonObjectKey(rivals)),rivals,field_3,shape_6,[\n  {\n    \"food\" : \"rice\"\n  },\n  {\n    \"food\" : \"cookies\"\n  }\n],Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),food,\"rice\",Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),food,\"cookies\",Set())), (List(JsonObjectKey(stats)),KnownExampleField(List(JsonObjectKey(stats)),stats,field_5,shape_8,{\n  \"rank\" : 1\n},Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),KnownExampleField(List(JsonObjectKey(stats), JsonObjectKey(rank)),rank,field_4,shape_7,1,Set())))",
+        "Vector((List(JsonObjectKey(rivals), JsonArrayItem(0)),ExampleItem(List(JsonObjectKey(rivals), JsonArrayItem(0)),0,{\n  \"food\" : \"rice\"\n},Set(UnmatchedShape(List(JsonObjectKey(rivals), JsonArrayItem(0)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6), ListItemTrail(shape_6,shape_5))))))), (List(JsonObjectKey(rivals), JsonArrayItem(1)),ExampleItem(List(JsonObjectKey(rivals), JsonArrayItem(1)),1,{\n  \"food\" : \"cookies\"\n},Set())))",
+        "Vector((shape_1,SpecPrimitive(shape_1,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_2,SpecPrimitive(shape_2,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_3,SpecObject(shape_3,List(SpecField(first,field_0,shape_1,Set()), SpecField(last,field_1,shape_2,Set())),Set())), (shape_5,SpecPrimitive(shape_5,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set(UnmatchedShape(List(JsonObjectKey(rivals), JsonArrayItem(0)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6), ListItemTrail(shape_6,shape_5))))))), (shape_6,SpecArray(shape_6,shape_5,RenderName(List(NameComponent(List of ,ListColor,,Some(shape_5),Some(shape_5)))),Set(UnmatchedShape(List(JsonObjectKey(rivals), JsonArrayItem(0)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6), ListItemTrail(shape_6,shape_5))))))), (shape_7,SpecPrimitive(shape_7,$number,RenderName(List(NameComponent(Number,NumberColor,,None,None))),Set())), (shape_8,SpecObject(shape_8,List(SpecField(rank,field_4,shape_7,Set())),Set())), (shape_9,SpecObject(shape_9,List(SpecField(name,field_2,shape_3,Set()), SpecField(rivals,field_3,shape_6,Set()), SpecField(stats,field_5,shape_8,Set())),Set())))"
       ]
     },
     {
@@ -225,7 +225,217 @@
           },
           "requestsTrail" : {
             "SpecResponseBody" : {
-              "responseId" : "response_1"
+              "responseId" : "response_0"
+            }
+          },
+          "shapeDiffResult" : {
+            "UnmatchedShape" : {
+              "jsonTrail" : {
+                "path" : [
+                  {
+                    "JsonObjectKey" : {
+                      "key" : "rivals"
+                    }
+                  },
+                  {
+                    "JsonArrayItem" : {
+                      "index" : 1
+                    }
+                  }
+                ]
+              },
+              "shapeTrail" : {
+                "rootShapeId" : "shape_9",
+                "path" : [
+                  {
+                    "ObjectFieldTrail" : {
+                      "fieldId" : "field_3",
+                      "fieldShapeId" : "shape_6"
+                    }
+                  },
+                  {
+                    "ListItemTrail" : {
+                      "listShapeId" : "shape_6",
+                      "itemShapeId" : "shape_5"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "title" : "shape at index 1 in the 200 Response body was not a string",
+      "suggestions" : [
+        {
+          "title" : "Allow shape at index 1 to be either a string or Object",
+          "commandsJson" : [
+            {
+              "AddShape" : {
+                "shapeId" : "shape_5007",
+                "baseShapeId" : "$object",
+                "name" : ""
+              }
+            },
+            {
+              "AddShape" : {
+                "shapeId" : "shape_5006",
+                "baseShapeId" : "$string",
+                "name" : ""
+              }
+            },
+            {
+              "AddField" : {
+                "fieldId" : "field_5002",
+                "shapeId" : "shape_5007",
+                "name" : "food",
+                "shapeDescriptor" : {
+                  "FieldShapeFromShape" : {
+                    "fieldId" : "field_5002",
+                    "shapeId" : "shape_5006"
+                  }
+                }
+              }
+            },
+            {
+              "AddShape" : {
+                "shapeId" : "shape_5005",
+                "baseShapeId" : "$oneOf",
+                "name" : ""
+              }
+            },
+            {
+              "AddShapeParameter" : {
+                "shapeParameterId" : "shape-parameter_5002",
+                "shapeId" : "shape_5005",
+                "name" : ""
+              }
+            },
+            {
+              "AddShapeParameter" : {
+                "shapeParameterId" : "shape-parameter_5003",
+                "shapeId" : "shape_5005",
+                "name" : ""
+              }
+            },
+            {
+              "SetParameterShape" : {
+                "shapeDescriptor" : {
+                  "ProviderInShape" : {
+                    "shapeId" : "shape_5005",
+                    "providerDescriptor" : {
+                      "ShapeProvider" : {
+                        "shapeId" : "shape_5007"
+                      }
+                    },
+                    "consumingParameterId" : "shape-parameter_5003"
+                  }
+                }
+              }
+            },
+            {
+              "SetParameterShape" : {
+                "shapeDescriptor" : {
+                  "ProviderInShape" : {
+                    "shapeId" : "shape_5005",
+                    "providerDescriptor" : {
+                      "ShapeProvider" : {
+                        "shapeId" : "shape_5"
+                      }
+                    },
+                    "consumingParameterId" : "shape-parameter_5002"
+                  }
+                }
+              }
+            },
+            {
+              "SetParameterShape" : {
+                "shapeDescriptor" : {
+                  "ProviderInShape" : {
+                    "shapeId" : "shape_6",
+                    "providerDescriptor" : {
+                      "ShapeProvider" : {
+                        "shapeId" : "shape_5005"
+                      }
+                    },
+                    "consumingParameterId" : "$listItem"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title" : "Change shape to Object",
+          "commandsJson" : [
+            {
+              "AddShape" : {
+                "shapeId" : "shape_5009",
+                "baseShapeId" : "$object",
+                "name" : ""
+              }
+            },
+            {
+              "AddShape" : {
+                "shapeId" : "shape_5008",
+                "baseShapeId" : "$string",
+                "name" : ""
+              }
+            },
+            {
+              "AddField" : {
+                "fieldId" : "field_5003",
+                "shapeId" : "shape_5009",
+                "name" : "food",
+                "shapeDescriptor" : {
+                  "FieldShapeFromShape" : {
+                    "fieldId" : "field_5003",
+                    "shapeId" : "shape_5008"
+                  }
+                }
+              }
+            },
+            {
+              "SetParameterShape" : {
+                "shapeDescriptor" : {
+                  "ProviderInShape" : {
+                    "shapeId" : "shape_6",
+                    "providerDescriptor" : {
+                      "ShapeProvider" : {
+                        "shapeId" : "shape_5009"
+                      }
+                    },
+                    "consumingParameterId" : "$listItem"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "preview" : [
+        "Vector((List(),ExampleObject(List(),Some(shape_9),List(List(JsonObjectKey(name)), List(JsonObjectKey(rivals)), List(JsonObjectKey(stats))),List(),List(),Set())), (List(JsonObjectKey(name)),ExampleObject(List(JsonObjectKey(name)),Some(shape_3),List(List(JsonObjectKey(name), JsonObjectKey(first)), List(JsonObjectKey(name), JsonObjectKey(last))),List(),List(),Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(first)),$string,Some(shape_1),\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(last)),$string,Some(shape_2),\"C\",Set())), (List(JsonObjectKey(rivals)),ExampleArray(List(JsonObjectKey(rivals)),Some(shape_6),Some(shape_5),Vector(List(JsonObjectKey(rivals), JsonArrayItem(0)), List(JsonObjectKey(rivals), JsonArrayItem(1))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0)),ExampleObject(List(JsonObjectKey(rivals), JsonArrayItem(0)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),$string,None,\"rice\",Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1)),ExampleObject(List(JsonObjectKey(rivals), JsonArrayItem(1)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),$string,None,\"cookies\",Set())), (List(JsonObjectKey(stats)),ExampleObject(List(JsonObjectKey(stats)),Some(shape_8),List(List(JsonObjectKey(stats), JsonObjectKey(rank))),List(),List(),Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),ExamplePrimitive(List(JsonObjectKey(stats), JsonObjectKey(rank)),$number,Some(shape_7),1,Set())))",
+        "Vector((List(JsonObjectKey(name)),KnownExampleField(List(JsonObjectKey(name)),name,field_2,shape_3,{\n  \"first\" : \"Bob\",\n  \"last\" : \"C\"\n},Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(first)),first,field_0,shape_1,\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(last)),last,field_1,shape_2,\"C\",Set())), (List(JsonObjectKey(rivals)),KnownExampleField(List(JsonObjectKey(rivals)),rivals,field_3,shape_6,[\n  {\n    \"food\" : \"rice\"\n  },\n  {\n    \"food\" : \"cookies\"\n  }\n],Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),food,\"rice\",Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),food,\"cookies\",Set())), (List(JsonObjectKey(stats)),KnownExampleField(List(JsonObjectKey(stats)),stats,field_5,shape_8,{\n  \"rank\" : 1\n},Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),KnownExampleField(List(JsonObjectKey(stats), JsonObjectKey(rank)),rank,field_4,shape_7,1,Set())))",
+        "Vector((List(JsonObjectKey(rivals), JsonArrayItem(0)),ExampleItem(List(JsonObjectKey(rivals), JsonArrayItem(0)),0,{\n  \"food\" : \"rice\"\n},Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1)),ExampleItem(List(JsonObjectKey(rivals), JsonArrayItem(1)),1,{\n  \"food\" : \"cookies\"\n},Set(UnmatchedShape(List(JsonObjectKey(rivals), JsonArrayItem(1)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6), ListItemTrail(shape_6,shape_5))))))))",
+        "Vector((shape_1,SpecPrimitive(shape_1,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_2,SpecPrimitive(shape_2,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_3,SpecObject(shape_3,List(SpecField(first,field_0,shape_1,Set()), SpecField(last,field_1,shape_2,Set())),Set())), (shape_5,SpecPrimitive(shape_5,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set(UnmatchedShape(List(JsonObjectKey(rivals), JsonArrayItem(1)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6), ListItemTrail(shape_6,shape_5))))))), (shape_6,SpecArray(shape_6,shape_5,RenderName(List(NameComponent(List of ,ListColor,,Some(shape_5),Some(shape_5)))),Set(UnmatchedShape(List(JsonObjectKey(rivals), JsonArrayItem(1)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6), ListItemTrail(shape_6,shape_5))))))), (shape_7,SpecPrimitive(shape_7,$number,RenderName(List(NameComponent(Number,NumberColor,,None,None))),Set())), (shape_8,SpecObject(shape_8,List(SpecField(rank,field_4,shape_7,Set())),Set())), (shape_9,SpecObject(shape_9,List(SpecField(name,field_2,shape_3,Set()), SpecField(rivals,field_3,shape_6,Set()), SpecField(stats,field_5,shape_8,Set())),Set())))"
+      ]
+    },
+    {
+      "diff" : {
+        "UnmatchedResponseBodyShape" : {
+          "interactionTrail" : {
+            "path" : [
+              {
+                "ResponseBody" : {
+                  "contentType" : "application/json",
+                  "statusCode" : 200
+                }
+              }
+            ]
+          },
+          "requestsTrail" : {
+            "SpecResponseBody" : {
+              "responseId" : "response_0"
             }
           },
           "shapeDiffResult" : {
@@ -250,18 +460,18 @@
                 ]
               },
               "shapeTrail" : {
-                "rootShapeId" : "shape_10",
+                "rootShapeId" : "shape_9",
                 "path" : [
                   {
                     "ObjectFieldTrail" : {
-                      "fieldId" : "parameter_4",
-                      "fieldShapeId" : "shape_7"
+                      "fieldId" : "field_3",
+                      "fieldShapeId" : "shape_6"
                     }
                   },
                   {
                     "ListItemTrail" : {
-                      "listShapeId" : "shape_7",
-                      "itemShapeId" : "shape_6"
+                      "listShapeId" : "shape_6",
+                      "itemShapeId" : "shape_5"
                     }
                   }
                 ]
@@ -274,10 +484,80 @@
       "suggestions" : [
       ],
       "preview" : [
-        "Vector((List(),ExampleObject(List(),Some(shape_10),List(List(JsonObjectKey(name)), List(JsonObjectKey(rivals)), List(JsonObjectKey(stats))),List(),List(),Set())), (List(JsonObjectKey(name)),ExampleObject(List(JsonObjectKey(name)),Some(shape_4),List(List(JsonObjectKey(name), JsonObjectKey(first)), List(JsonObjectKey(name), JsonObjectKey(last))),List(),List(),Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(first)),$string,Some(shape_2),\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(last)),$string,Some(shape_3),\"C\",Set())), (List(JsonObjectKey(rivals)),ExampleArray(List(JsonObjectKey(rivals)),Some(shape_7),Some(shape_6),Vector(List(JsonObjectKey(rivals), JsonArrayItem(0)), List(JsonObjectKey(rivals), JsonArrayItem(1))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0)),ExampleObject(List(JsonObjectKey(rivals), JsonArrayItem(0)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),$string,None,\"rice\",Set(UnspecifiedShape(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),ShapeTrail(shape_10,List(ObjectFieldTrail(parameter_4,shape_7), ListItemTrail(shape_7,shape_6))))))), (List(JsonObjectKey(rivals), JsonArrayItem(1)),ExampleObject(List(JsonObjectKey(rivals), JsonArrayItem(1)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),$string,None,\"cookies\",Set())), (List(JsonObjectKey(stats)),ExampleObject(List(JsonObjectKey(stats)),Some(shape_9),List(List(JsonObjectKey(stats), JsonObjectKey(rank))),List(),List(),Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),ExamplePrimitive(List(JsonObjectKey(stats), JsonObjectKey(rank)),$number,Some(shape_8),1,Set())))",
-        "Vector((List(JsonObjectKey(name)),KnownExampleField(List(JsonObjectKey(name)),name,parameter_3,shape_4,{\n  \"first\" : \"Bob\",\n  \"last\" : \"C\"\n},Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(first)),first,parameter_1,shape_2,\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(last)),last,parameter_2,shape_3,\"C\",Set())), (List(JsonObjectKey(rivals)),KnownExampleField(List(JsonObjectKey(rivals)),rivals,parameter_4,shape_7,[\n  {\n    \"food\" : \"rice\"\n  },\n  {\n    \"food\" : \"cookies\"\n  }\n],Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),food,\"rice\",Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),food,\"cookies\",Set())), (List(JsonObjectKey(stats)),KnownExampleField(List(JsonObjectKey(stats)),stats,parameter_6,shape_9,{\n  \"rank\" : 1\n},Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),KnownExampleField(List(JsonObjectKey(stats), JsonObjectKey(rank)),rank,parameter_5,shape_8,1,Set())))",
+        "Vector((List(),ExampleObject(List(),Some(shape_9),List(List(JsonObjectKey(name)), List(JsonObjectKey(rivals)), List(JsonObjectKey(stats))),List(),List(),Set())), (List(JsonObjectKey(name)),ExampleObject(List(JsonObjectKey(name)),Some(shape_3),List(List(JsonObjectKey(name), JsonObjectKey(first)), List(JsonObjectKey(name), JsonObjectKey(last))),List(),List(),Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(first)),$string,Some(shape_1),\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(last)),$string,Some(shape_2),\"C\",Set())), (List(JsonObjectKey(rivals)),ExampleArray(List(JsonObjectKey(rivals)),Some(shape_6),Some(shape_5),Vector(List(JsonObjectKey(rivals), JsonArrayItem(0)), List(JsonObjectKey(rivals), JsonArrayItem(1))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0)),ExampleObject(List(JsonObjectKey(rivals), JsonArrayItem(0)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),$string,None,\"rice\",Set(UnspecifiedShape(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6), ListItemTrail(shape_6,shape_5))))))), (List(JsonObjectKey(rivals), JsonArrayItem(1)),ExampleObject(List(JsonObjectKey(rivals), JsonArrayItem(1)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),$string,None,\"cookies\",Set())), (List(JsonObjectKey(stats)),ExampleObject(List(JsonObjectKey(stats)),Some(shape_8),List(List(JsonObjectKey(stats), JsonObjectKey(rank))),List(),List(),Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),ExamplePrimitive(List(JsonObjectKey(stats), JsonObjectKey(rank)),$number,Some(shape_7),1,Set())))",
+        "Vector((List(JsonObjectKey(name)),KnownExampleField(List(JsonObjectKey(name)),name,field_2,shape_3,{\n  \"first\" : \"Bob\",\n  \"last\" : \"C\"\n},Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(first)),first,field_0,shape_1,\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(last)),last,field_1,shape_2,\"C\",Set())), (List(JsonObjectKey(rivals)),KnownExampleField(List(JsonObjectKey(rivals)),rivals,field_3,shape_6,[\n  {\n    \"food\" : \"rice\"\n  },\n  {\n    \"food\" : \"cookies\"\n  }\n],Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),food,\"rice\",Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),food,\"cookies\",Set())), (List(JsonObjectKey(stats)),KnownExampleField(List(JsonObjectKey(stats)),stats,field_5,shape_8,{\n  \"rank\" : 1\n},Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),KnownExampleField(List(JsonObjectKey(stats), JsonObjectKey(rank)),rank,field_4,shape_7,1,Set())))",
         "Vector((List(JsonObjectKey(rivals), JsonArrayItem(0)),ExampleItem(List(JsonObjectKey(rivals), JsonArrayItem(0)),0,{\n  \"food\" : \"rice\"\n},Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1)),ExampleItem(List(JsonObjectKey(rivals), JsonArrayItem(1)),1,{\n  \"food\" : \"cookies\"\n},Set())))",
-        "Vector((shape_10,SpecObject(shape_10,List(SpecField(name,parameter_3,shape_4,Set()), SpecField(rivals,parameter_4,shape_7,Set()), SpecField(stats,parameter_6,shape_9,Set())),Set())), (shape_2,SpecPrimitive(shape_2,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_3,SpecPrimitive(shape_3,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_4,SpecObject(shape_4,List(SpecField(first,parameter_1,shape_2,Set()), SpecField(last,parameter_2,shape_3,Set())),Set())), (shape_6,SpecPrimitive(shape_6,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set(UnspecifiedShape(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),ShapeTrail(shape_10,List(ObjectFieldTrail(parameter_4,shape_7), ListItemTrail(shape_7,shape_6))))))), (shape_7,SpecArray(shape_7,shape_6,RenderName(List(NameComponent(List of ,ListColor,,Some(shape_6),Some(shape_6)))),Set(UnspecifiedShape(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),ShapeTrail(shape_10,List(ObjectFieldTrail(parameter_4,shape_7), ListItemTrail(shape_7,shape_6))))))), (shape_8,SpecPrimitive(shape_8,$number,RenderName(List(NameComponent(Number,NumberColor,,None,None))),Set())), (shape_9,SpecObject(shape_9,List(SpecField(rank,parameter_5,shape_8,Set())),Set())))"
+        "Vector((shape_1,SpecPrimitive(shape_1,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_2,SpecPrimitive(shape_2,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_3,SpecObject(shape_3,List(SpecField(first,field_0,shape_1,Set()), SpecField(last,field_1,shape_2,Set())),Set())), (shape_5,SpecPrimitive(shape_5,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set(UnspecifiedShape(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6), ListItemTrail(shape_6,shape_5))))))), (shape_6,SpecArray(shape_6,shape_5,RenderName(List(NameComponent(List of ,ListColor,,Some(shape_5),Some(shape_5)))),Set(UnspecifiedShape(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6), ListItemTrail(shape_6,shape_5))))))), (shape_7,SpecPrimitive(shape_7,$number,RenderName(List(NameComponent(Number,NumberColor,,None,None))),Set())), (shape_8,SpecObject(shape_8,List(SpecField(rank,field_4,shape_7,Set())),Set())), (shape_9,SpecObject(shape_9,List(SpecField(name,field_2,shape_3,Set()), SpecField(rivals,field_3,shape_6,Set()), SpecField(stats,field_5,shape_8,Set())),Set())))"
+      ]
+    },
+    {
+      "diff" : {
+        "UnmatchedResponseBodyShape" : {
+          "interactionTrail" : {
+            "path" : [
+              {
+                "ResponseBody" : {
+                  "contentType" : "application/json",
+                  "statusCode" : 200
+                }
+              }
+            ]
+          },
+          "requestsTrail" : {
+            "SpecResponseBody" : {
+              "responseId" : "response_0"
+            }
+          },
+          "shapeDiffResult" : {
+            "UnspecifiedShape" : {
+              "jsonTrail" : {
+                "path" : [
+                  {
+                    "JsonObjectKey" : {
+                      "key" : "rivals"
+                    }
+                  },
+                  {
+                    "JsonArrayItem" : {
+                      "index" : 1
+                    }
+                  },
+                  {
+                    "JsonObjectKey" : {
+                      "key" : "food"
+                    }
+                  }
+                ]
+              },
+              "shapeTrail" : {
+                "rootShapeId" : "shape_9",
+                "path" : [
+                  {
+                    "ObjectFieldTrail" : {
+                      "fieldId" : "field_3",
+                      "fieldShapeId" : "shape_6"
+                    }
+                  },
+                  {
+                    "ListItemTrail" : {
+                      "listShapeId" : "shape_6",
+                      "itemShapeId" : "shape_5"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "title" : "'food' observed in the 200 Response body",
+      "suggestions" : [
+      ],
+      "preview" : [
+        "Vector((List(),ExampleObject(List(),Some(shape_9),List(List(JsonObjectKey(name)), List(JsonObjectKey(rivals)), List(JsonObjectKey(stats))),List(),List(),Set())), (List(JsonObjectKey(name)),ExampleObject(List(JsonObjectKey(name)),Some(shape_3),List(List(JsonObjectKey(name), JsonObjectKey(first)), List(JsonObjectKey(name), JsonObjectKey(last))),List(),List(),Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(first)),$string,Some(shape_1),\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),ExamplePrimitive(List(JsonObjectKey(name), JsonObjectKey(last)),$string,Some(shape_2),\"C\",Set())), (List(JsonObjectKey(rivals)),ExampleArray(List(JsonObjectKey(rivals)),Some(shape_6),Some(shape_5),Vector(List(JsonObjectKey(rivals), JsonArrayItem(0)), List(JsonObjectKey(rivals), JsonArrayItem(1))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0)),ExampleObject(List(JsonObjectKey(rivals), JsonArrayItem(0)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),$string,None,\"rice\",Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1)),ExampleObject(List(JsonObjectKey(rivals), JsonArrayItem(1)),None,List(),List(),List(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food))),Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),ExamplePrimitive(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),$string,None,\"cookies\",Set(UnspecifiedShape(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6), ListItemTrail(shape_6,shape_5))))))), (List(JsonObjectKey(stats)),ExampleObject(List(JsonObjectKey(stats)),Some(shape_8),List(List(JsonObjectKey(stats), JsonObjectKey(rank))),List(),List(),Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),ExamplePrimitive(List(JsonObjectKey(stats), JsonObjectKey(rank)),$number,Some(shape_7),1,Set())))",
+        "Vector((List(JsonObjectKey(name)),KnownExampleField(List(JsonObjectKey(name)),name,field_2,shape_3,{\n  \"first\" : \"Bob\",\n  \"last\" : \"C\"\n},Set())), (List(JsonObjectKey(name), JsonObjectKey(first)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(first)),first,field_0,shape_1,\"Bob\",Set())), (List(JsonObjectKey(name), JsonObjectKey(last)),KnownExampleField(List(JsonObjectKey(name), JsonObjectKey(last)),last,field_1,shape_2,\"C\",Set())), (List(JsonObjectKey(rivals)),KnownExampleField(List(JsonObjectKey(rivals)),rivals,field_3,shape_6,[\n  {\n    \"food\" : \"rice\"\n  },\n  {\n    \"food\" : \"cookies\"\n  }\n],Set())), (List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonArrayItem(0), JsonObjectKey(food)),food,\"rice\",Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),UnexpectedExampleField(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),food,\"cookies\",Set())), (List(JsonObjectKey(stats)),KnownExampleField(List(JsonObjectKey(stats)),stats,field_5,shape_8,{\n  \"rank\" : 1\n},Set())), (List(JsonObjectKey(stats), JsonObjectKey(rank)),KnownExampleField(List(JsonObjectKey(stats), JsonObjectKey(rank)),rank,field_4,shape_7,1,Set())))",
+        "Vector((List(JsonObjectKey(rivals), JsonArrayItem(0)),ExampleItem(List(JsonObjectKey(rivals), JsonArrayItem(0)),0,{\n  \"food\" : \"rice\"\n},Set())), (List(JsonObjectKey(rivals), JsonArrayItem(1)),ExampleItem(List(JsonObjectKey(rivals), JsonArrayItem(1)),1,{\n  \"food\" : \"cookies\"\n},Set())))",
+        "Vector((shape_1,SpecPrimitive(shape_1,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_2,SpecPrimitive(shape_2,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set())), (shape_3,SpecObject(shape_3,List(SpecField(first,field_0,shape_1,Set()), SpecField(last,field_1,shape_2,Set())),Set())), (shape_5,SpecPrimitive(shape_5,$string,RenderName(List(NameComponent(String,StringColor,,None,None))),Set(UnspecifiedShape(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6), ListItemTrail(shape_6,shape_5))))))), (shape_6,SpecArray(shape_6,shape_5,RenderName(List(NameComponent(List of ,ListColor,,Some(shape_5),Some(shape_5)))),Set(UnspecifiedShape(List(JsonObjectKey(rivals), JsonArrayItem(1), JsonObjectKey(food)),ShapeTrail(shape_9,List(ObjectFieldTrail(field_3,shape_6), ListItemTrail(shape_6,shape_5))))))), (shape_7,SpecPrimitive(shape_7,$number,RenderName(List(NameComponent(Number,NumberColor,,None,None))),Set())), (shape_8,SpecObject(shape_8,List(SpecField(rank,field_4,shape_7,Set())),Set())), (shape_9,SpecObject(shape_9,List(SpecField(name,field_2,shape_3,Set()), SpecField(rivals,field_3,shape_6,Set()), SpecField(stats,field_5,shape_8,Set())),Set())))"
       ]
     }
   ]

@@ -2,7 +2,7 @@
   "events" : [
     {
       "PathComponentAdded" : {
-        "pathId" : "path_1",
+        "pathId" : "path_0",
         "parentPathId" : "root",
         "name" : "events",
         "eventContext" : {
@@ -15,8 +15,8 @@
     },
     {
       "RequestParameterAddedByPathAndMethod" : {
-        "parameterId" : "parameter_1",
-        "pathId" : "path_1",
+        "parameterId" : "request-parameter_0",
+        "pathId" : "path_0",
         "httpMethod" : "GET",
         "parameterLocation" : "query",
         "name" : "queryString",
@@ -30,7 +30,7 @@
     },
     {
       "ShapeAdded" : {
-        "shapeId" : "shape_4",
+        "shapeId" : "shape_3",
         "baseShapeId" : "$object",
         "parameters" : {
           "DynamicParameterList" : {
@@ -49,9 +49,9 @@
     },
     {
       "RequestParameterShapeSet" : {
-        "parameterId" : "parameter_1",
+        "parameterId" : "request-parameter_0",
         "parameterDescriptor" : {
-          "shapeId" : "shape_4",
+          "shapeId" : "shape_3",
           "isRemoved" : false
         },
         "eventContext" : {
@@ -64,8 +64,8 @@
     },
     {
       "RequestAdded" : {
-        "requestId" : "request_1",
-        "pathId" : "path_1",
+        "requestId" : "request_0",
+        "pathId" : "path_0",
         "httpMethod" : "GET",
         "eventContext" : {
           "clientId" : "ccc",
@@ -77,8 +77,8 @@
     },
     {
       "ResponseAddedByPathAndMethod" : {
-        "responseId" : "response_1",
-        "pathId" : "path_1",
+        "responseId" : "response_0",
+        "pathId" : "path_0",
         "httpMethod" : "GET",
         "httpStatusCode" : 200,
         "eventContext" : {
@@ -91,7 +91,7 @@
     },
     {
       "ShapeAdded" : {
-        "shapeId" : "shape_2",
+        "shapeId" : "shape_1",
         "baseShapeId" : "$unknown",
         "parameters" : {
           "DynamicParameterList" : {
@@ -110,7 +110,7 @@
     },
     {
       "ShapeAdded" : {
-        "shapeId" : "shape_3",
+        "shapeId" : "shape_2",
         "baseShapeId" : "$list",
         "parameters" : {
           "DynamicParameterList" : {
@@ -131,10 +131,10 @@
       "ShapeParameterShapeSet" : {
         "shapeDescriptor" : {
           "ProviderInShape" : {
-            "shapeId" : "shape_3",
+            "shapeId" : "shape_2",
             "providerDescriptor" : {
               "ShapeProvider" : {
-                "shapeId" : "shape_2"
+                "shapeId" : "shape_1"
               }
             },
             "consumingParameterId" : "$listItem"
@@ -150,10 +150,10 @@
     },
     {
       "ResponseBodySet" : {
-        "responseId" : "response_1",
+        "responseId" : "response_0",
         "bodyDescriptor" : {
           "httpContentType" : "application/json",
-          "shapeId" : "shape_3",
+          "shapeId" : "shape_2",
           "isRemoved" : false
         },
         "eventContext" : {

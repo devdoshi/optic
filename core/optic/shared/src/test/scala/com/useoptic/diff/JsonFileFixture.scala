@@ -73,7 +73,7 @@ trait JsonFileFixture {
     val eventStore = RfcServiceJSFacade.makeEventStore()
     val rfcId = "testRfcId"
     eventStore.append(rfcId, events)
-    implicit val ids = OpticIds.newDeterministicIdGenerator
+    implicit val ids = OpticIds.newDeterministicIdGenerator()
     val rfcService = new RfcService(eventStore)
     val rfcState = rfcService.currentState(rfcId)
     Universe(rfcService, rfcId, eventStore, interactions)
