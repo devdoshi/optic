@@ -2,13 +2,13 @@
 
 mod events;
 mod interactions;
+mod learn_shape;
 mod projections;
 mod protos;
 mod queries;
 mod shapes;
 mod state;
 pub mod streams;
-mod learn_shape;
 
 pub use cqrs_core::Aggregate;
 pub use events::{HttpInteraction, SpecEvent};
